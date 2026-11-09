@@ -17,7 +17,7 @@
 
   /* ---------- placeholder pages (until real images exist) ---------- */
   function coverSvg(t) {
-    var a = (t.art && t.art.a) || "#9053ff", b = (t.art && t.art.b) || "#1a0b2e";
+    var a = (t.art && t.art.a) || "#e0862a", b = (t.art && t.art.b) || "#1a0b2e";
     var label = (t.art && t.art.label) || t.title.slice(0, 2).toUpperCase();
     return uri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">' +
       '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="' + a + '"/><stop offset="1" stop-color="' + b + '"/></linearGradient></defs>' +
@@ -29,7 +29,7 @@
   }
   function cover(t) { return t.cover || coverSvg(t); }
   function pagePh(t, num, i, total) {
-    var a = (t.art && t.art.a) || "#9053ff";
+    var a = (t.art && t.art.a) || "#e0862a";
     return uri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200">' +
       '<rect width="800" height="1200" fill="#f2efe7"/>' +
       '<rect x="36" y="36" width="728" height="1128" fill="none" stroke="#191919" stroke-width="3"/>' +
@@ -77,7 +77,7 @@
     }
     return '<svg class="mkm-page" viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="' + esc(t.title) + ' page ' + i + '">' +
       '<rect width="800" height="1200" fill="#fdfdf8"/>' +
-      '<text x="40" y="58" font-family="system-ui,sans-serif" font-size="30" font-weight="800" fill="#111">' + esc(t.title) + " — 第" + esc(c.num) + "話 " + esc(c.title) + "</text>" +
+      '<text x="40" y="58" font-family="system-ui,sans-serif" font-size="30" font-weight="800" fill="#111">' + esc(t.title) + " — " + esc(c.num) + "화 " + esc(c.title) + "</text>" +
       panels + bubble + caption +
       '<text x="760" y="1185" text-anchor="end" font-family="system-ui,sans-serif" font-size="22" fill="#666">' + i + " / " + total + "</text>" +
       "</svg>";
@@ -111,7 +111,7 @@
     return out;
   }
   function bg(t) {
-    var a = (t.art && t.art.a) || "#9053ff";
+    var a = (t.art && t.art.a) || "#e0862a";
     return uri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">' +
       '<rect width="1600" height="700" fill="#0a0a12"/>' +
       '<circle cx="1180" cy="330" r="420" fill="' + a + '" opacity=".28"/>' +
@@ -411,13 +411,13 @@
       ] });
     remember(t.id, c.num);
 
-    $("#r-title").innerHTML = '第' + esc(c.num) + '話:' + esc(c.title) +
+    $("#r-title").innerHTML = esc(c.num) + '화: ' + esc(c.title) +
       ' <span style="color:var(--mkm-muted);font-size:.85rem">· <a href="story.html?id=' + esc(t.id) + '">' + esc(t.title) + "</a></span>";
     $("#all-ch").href = "story.html?id=" + encodeURIComponent(t.id);
 
     var sel = $("#ch-select");
     sel.innerHTML = list.map(function (x) {
-      return '<option value="' + esc(x.num) + '"' + (x.num === c.num ? " selected" : "") + ">第' + esc(x.num) + '話 ' + esc(x.title) + '</option>";
+      return '<option value="' + esc(x.num) + '"' + (x.num === c.num ? " selected" : "") + ">" + esc(x.num) + '화 ' + esc(x.title) + '</option>';
     }).join("");
     sel.onchange = function () { location.href = "read.html?id=" + t.id + "&ch=" + sel.value; };
 
