@@ -1,3 +1,1 @@
-# ads.txt (IAB 표준). AdSense 승인 후 아래 줄의 pub-0000000000000000 부분을
-# 본인의 실제 게시자 ID로 교체하세요.
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-6353037841429618, DIRECT, f08c47fec0942fa0
