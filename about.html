@@ -16,30 +16,97 @@
 <meta property="og:url" content="https://talevault.mkm.fan/about.html">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="사이트 소개 — TaleVault">
-<meta name="twitter:description" content="TaleVault는 오리지널 단편과 연재 소설을 무료로 제공하는 이야기 보관소입니다.">
 <link rel="icon" type="image/png" href="favicon.png">
-<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
 <link rel="stylesheet" href="assets/css/mkm.css">
-<script>window.mkmPageAds = { header: false, sidebar: false, inReader: false, footer: false };</script>
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body data-route="">
-<a class="mkm-skip" href="#main">본문 바로가기</a>
-<main id="main"><div class="mkm-container mkm-page">
-<nav class="mkm-breadcrumb" aria-label="경로"><a href="index.html">홈</a> <span>/</span> <span>사이트 소개</span></nav>
+<body data-page="static" id="mkm-top">
+<a class="mkm-skip-link" href="#content">본문 바로가기</a>
+
+<header class="mkm-header is-sticky">
+  <div class="mkm-container mkm-header-inner">
+    <div class="mkm-brand">
+      <a class="mkm-logo" href="index.html" aria-label="ホーム">
+        <span class="mkm-logo-mark">T</span>
+        <span class="mkm-logo-text">TaleVault</span>
+      </a>
+    </div>
+    <nav class="mkm-nav" aria-label="Primary menu">
+      <ul class="mkm-menu">
+        <li><a href="index.html">홈</a></li>
+        <li><a href="search.html">이야기</a></li>
+        <li><a href="index.html#latest">최신</a></li>
+        <li><a href="index.html#feature">소개</a></li>
+      </ul>
+    </nav>
+    <div class="mkm-header-actions">
+      <form class="mkm-search" role="search" action="search.html" method="get">
+        <input type="search" name="s" placeholder="이야기 검색…" aria-label="이야기 검색">
+        <button type="submit" aria-label="検索">⌕</button>
+      </form>
+      <button type="button" class="mkm-menu-toggle" aria-expanded="false" aria-controls="mkm-mobile-menu">
+        <span class="mkm-menu-toggle-icon" aria-hidden="true"></span><span class="mkm-menu-toggle-label">메뉴</span>
+      </button>
+    </div>
+  </div>
+  <div class="mkm-mobile-menu" id="mkm-mobile-menu"><div class="mkm-container">
+    <ul class="mkm-mobile-nav">
+      <li><a href="index.html">홈</a></li>
+      <li><a href="search.html">이야기</a></li>
+      <li><a href="index.html#latest">최신</a></li>
+      <li><a href="index.html#feature">소개</a></li>
+    </ul>
+    <form class="mkm-search" role="search" action="search.html" method="get">
+      <input type="search" name="s" placeholder="이야기 검색…" aria-label="이야기 검색">
+      <button type="submit" aria-label="検索">⌕</button>
+    </form>
+  </div></div>
+</header>
+<div data-ad="header"></div>
+<main id="content" class="mkm-main"><div class="mkm-container mkm-page">
 <h1 class="mkm-title">TaleVault 소개</h1>
-<p class="mkm-about-text">TaleVault는 오리지널 단편 소설과 연재 소설을 무료로 읽을 수 있는 이야기 보관소입니다. 등대지기의 기록부터 심야 라디오의 유령 주파수까지, 매일 새로운 화가 올라옵니다.</p>
+<p class="mkm-lead">TaleVault는 오리지널 단편 소설과 연재 소설을 무료로 읽을 수 있는 독립 이야기 보관소입니다. 등대지기의 기록부터 심야 라디오의 유령 주파수까지, 모든 작품은 이 사이트를 위해 집필되었습니다.</p>
 <h2>무엇을 읽을 수 있나요</h2>
-<ul><li>짧은 완결 단편</li><li>매주 이어지는 연재 소설</li><li>드라마, 판타지, SF, 로맨스, 미스터리, 호러 장르</li></ul>
+<ul><li>완결 단편과 매주 이어지는 연재 소설</li><li>드라마, 판타지, SF, 로맨스, 미스터리, 호러 장르</li><li>페이지 모드와 세로 스크롤 두 가지 읽기 방식</li></ul>
 <h2>읽는 법</h2>
-<p>홈의 최신 이야기에서 시작하거나, 상단 검색으로 제목·장르·저자를 찾아보세요. 리더는 페이지 모드와 세로 스크롤 모드를 지원합니다.</p>
-</div></main>
-<footer class="mkm-footer"><div class="mkm-container"><div class="mkm-footer-grid has-four">
-<div class="mkm-footer-about"><div class="mkm-logo"><img src="favicon.png" alt="홈"><span>TaleVault</span></div><p class="mkm-about-text">오리지널 이야기 보관소 — 단편과 연재 소설을 매일 무료로.</p></div>
-<div class="mkm-footer-col"><h3>내비게이션</h3><ul><li><a href="index.html">홈</a></li><li><a href="search.html">이야기 목록</a></li><li><a href="search.html?s=%EB%93%9C%EB%9D%BC%EB%A7%88">드라마</a></li><li><a href="search.html?s=%ED%8C%90%ED%83%80%EC%A7%80">판타지</a></li></ul></div>
-<div class="mkm-footer-col"><h3>안내</h3><ul><li><a href="about.html">사이트 소개</a></li><li><a href="privacy.html">개인정보 처리방침</a></li><li><a href="dmca.html">저작권 안내</a></li><li><a href="contact.html">문의하기</a></li></ul></div>
-<div class="mkm-footer-col"><h3>장르</h3><ul class="mkm-footer-genres" id="footer-genres"></ul></div>
-</div><div class="mkm-footer-bottom">© 2026 TaleVault. 무단전재 및 재배포 금지. <span>오리지널 스토리 무료 연재.</span></div></div></footer>
-<script src="assets/js/app.js?v=2"></script>
+<p>홈의 최신 이야기에서 시작하거나 상단 검색으로 제목·장르·저자를 찾아보세요. 각 이야기 페이지에는 줄거리와 전체 화 목록이 있습니다.</p></div></main>
+<div data-ad="footer"></div>
+<footer class="mkm-footer">
+  <div class="mkm-container">
+    <div class="mkm-footer-grid has-four">
+      <div class="mkm-footer-brand">
+        <a class="mkm-footer-logo" href="index.html"><span class="mkm-logo-mark">T</span><span class="mkm-logo-text">TaleVault</span></a>
+        <p class="mkm-footer-about"></p>
+        <div class="mkm-social"></div>
+      </div>
+      <div class="mkm-footer-col"><h3>내비게이션</h3>
+        <ul class="mkm-footer-menu">
+          <li><a href="index.html">홈</a></li>
+          <li><a href="search.html">이야기</a></li>
+          <li><a href="index.html#latest">최신</a></li>
+          <li><a href="about.html">소개</a></li>
+        </ul>
+      </div>
+      <div class="mkm-footer-col"><h3>インフォメーション</h3>
+        <ul class="mkm-footer-menu">
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="terms.html">利用規約</a></li>
+          <li><a href="dmca.html">著作権ポリシー(DMCA)</a></li>
+        </ul>
+      </div>
+      <div class="mkm-footer-col"><h3>장르</h3>
+        <ul class="mkm-footer-menu mkm-footer-genres"></ul>
+      </div>
+    </div>
+    <div class="mkm-footer-bottom"><span>© <span data-year>2026</span> TaleVault. 무단전재 및 재배포 금지.</span><span>오리지널 스토리 무료 연재.</span></div>
+  </div>
+</footer>
+<button type="button" class="mkm-back-to-top" aria-label="Back to top">↑</button>
+
+
+
+
+<script src="assets/js/app.js?v=3"></script>
 </body>
 </html>

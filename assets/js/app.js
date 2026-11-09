@@ -106,8 +106,7 @@
       var n = c.pages || 0;
       for (var i = 1; i <= n; i++) out.push({ real: c.dir + pad(i) + ".jpg", ph: pagePh(t, c.num, i, n), i: i, inline: null });
     } else {
-      var m = c.pages || 0;
-      for (var j = 1; j <= m; j++) out.push({ real: null, ph: pagePh(t, c.num, j, m), i: j, inline: pageInline(t, c, j, m) });
+      out.push({ text: ["이 화의 본문은 준비 중입니다. 곧 업데이트될 예정이니 다른 화를 먼저 읽어 주세요.", "새 화와 새 이야기는 매주 추가됩니다."], i: 1, inline: null, ph: null, real: null });
     }
     return out;
   }
