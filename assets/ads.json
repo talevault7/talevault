@@ -2,11 +2,30 @@
   "_help": "Ye file ads ka control panel hai. enabled=false karne se poori site se ads hat jate hain. Har slot me on=true + code me apna ad snippet paste karein. Decap CMS lagne ke baad yahi file panel se edit hogi.",
   "enabled": true,
   "slots": {
-    "header":        { "on": false, "code": "" },
-    "home":          { "on": false, "code": "" },
-    "listing":       { "on": false, "code": "" },
-    "sidebar":       { "on": false, "code": "" },
-    "reader_inline": { "on": false, "every": 5, "code": "" },
-    "footer":        { "on": false, "code": "" }
+    "header": {
+      "on": false,
+      "code": ""
+    },
+    "home": {
+      "on": false,
+      "code": ""
+    },
+    "listing": {
+      "on": false,
+      "code": ""
+    },
+    "sidebar": {
+      "on": false,
+      "code": ""
+    },
+    "reader_inline": {
+      "on": false,
+      "every": 5,
+      "code": ""
+    },
+    "footer": {
+      "on": false,
+      "code": ""
+    }
   }
 }
