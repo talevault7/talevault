@@ -1,0 +1,45 @@
+/* =========================================================
+   TaleVault — extra styles
+   (theme ki asli style.css = mkm.css, usme haath nahi lagaya.
+    Ye file sirf wo cheezein add karti hai jo static reader ke
+    liye chahiye: stats row, reader tools, progress, paged mode)
+   ========================================================= */
+
+/* hero stats row (index.php ke .mkm-stats markup ke liye base styles) */
+.mkm-stats{display:flex;flex-wrap:wrap;gap:26px;margin-top:20px}
+.mkm-stat{display:flex;flex-direction:column;gap:2px}
+.mkm-stat-num{font-size:1.15rem;font-weight:900;color:#fff}
+.mkm-stat-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mkm-muted);font-weight:700}
+.mkm-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:rgba(144,83,255,.14);border:1px solid rgba(144,83,255,.35);color:#c9b4ff;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+
+/* reader toolbar */
+.mkm-reader-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.mkm-reader-tools select{background:var(--mkm-surface-2);color:var(--mkm-text);border:1px solid var(--mkm-border);border-radius:999px;padding:8px 12px;font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;outline:0}
+.mkm-reader-tools select:focus-visible{outline:2px solid var(--mkm-accent)}
+
+/* reading progress bar (sticky, header ke neeche) */
+.mkm-progress{position:sticky;top:0;z-index:40;height:3px;background:transparent;pointer-events:none}
+.mkm-progress-bar{height:100%;width:0;background:linear-gradient(90deg,#9053ff,#12d4e7);transition:width .1s linear}
+body.mkm-reading .mkm-header.is-sticky{top:3px}
+
+/* paged mode: ek page, centre me */
+.mkm-reader-images.is-paged{display:flex;justify-content:center}
+.mkm-reader-images.is-paged img{width:auto;max-width:100%;max-height:80vh;margin:0 auto;border-radius:8px}
+.mkm-reader-images img{background:var(--mkm-surface-2);min-height:90px}
+
+/* page width toggle (strip mode) */
+.mkm-reader.narrow{max-width:640px}
+.mkm-reader.wide{max-width:1100px}
+
+/* chapter list me "read" state */
+.mkm-chapter-list li.is-current a{background:var(--mkm-surface-2);color:var(--mkm-accent)}
+.mkm-chapter-list .pgs{font-size:.7rem;color:var(--mkm-muted);white-space:nowrap}
+
+/* home reader preview: placeholder pages thori chhoti */
+.mkm-home-reader .mkm-reader-images img{background:#0d0f16}
+
+/* search results page spacing */
+.mkm-search-results{padding:6px 0 10px}
+
+/* footer social chips ke icons ke liye chhota gap fix */
+.mkm-social a{gap:6px}

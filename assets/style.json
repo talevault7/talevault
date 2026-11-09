@@ -1,0 +1,12 @@
+{
+  "accent": "#e0862a",
+  "accent2": "#2aa5a0",
+  "bg": "#0d1117",
+  "surface": "#151b23",
+  "surface2": "#1d242e",
+  "border": "#2a3340",
+  "radius": "14px",
+  "container": "1200px",
+  "gridMin": 190,
+  "font": "Georgia,'Times New Roman',serif"
+}
